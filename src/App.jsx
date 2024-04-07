@@ -17,17 +17,26 @@ import Footer from './components/footer/Footer'
 const App = () => 
 {
   // Returning JSX for the App component
-  return 
-  (
+  return (
     <>
-        <Header />    //Rendering the Header component
-        <Nav/>        //Rendering the Nav component
-        <About/>      //Rendering the About component
-        <Experience/> //Rendering the Experience component
-        <Services/>   //Rendering the Services component
-        <Portfolio/>  //Rendering the Portfolio component
-        <Contact/>    //Rendering the Contact component
-        <Footer/>     //Rendering the Footer component
+
+                  {/* Rendering the Header component */}
+      <Header />
+                  {/* Rendering the Nav component */}
+      <Nav />
+                  {/* Rendering the About component */}
+      <About />
+                  {/* Rendering the Experience component */}
+      <Experience />
+                  {/* Rendering the Services component */}
+      <Services />
+                  {/* Rendering the Portfolio component */}
+      <Portfolio />
+                  {/* Rendering the Contact component */}
+      <Contact />
+                  {/* Rendering the Footer component */}
+      <Footer />
+
     </>
   )
 }
