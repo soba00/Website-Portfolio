@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;              /* Remove default margin */
     padding: 0;             /* Remove default padding */
@@ -10,9 +12,31 @@
 
 :root
 {
-        --color-bg:          #1f1f38;        /* Background color */
-        --color-bg-var:      #2c2c6c;        /* Background color (variant) */
-        --color-primary:     #4db5ff;        /* Primary color */
-        --color-primary-var: rgba(77, 181, 255, 0.4);  /* Primary color (variant) */
-        --color-light:       rgba(255, 255, 255, 0.6);  /* Light color with transparency */
+    --color-bg:          #1f1f38;                   /* Background color */
+    --color-bg-var:      #2c2c6c;                   /* Background color (variant) */
+    --color-primary:     #4db5ff;                   /* Primary color */
+    --color-primary-var: rgba(77, 181, 255, 0.4);   /* Primary color (variant) */
+    --color-light:       rgba(255, 255, 255, 0.6);  /* Light color with transparency */
+
+
+        --container-width-lg: 75%;
+        --container-width-md: 86%;
+        --container-width-ms: 90%;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg);
+
 }
