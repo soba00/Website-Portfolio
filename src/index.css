@@ -53,6 +53,8 @@ body
     background-image: url(../src/assets/bg-texture.png); /* Background texture */
 }
 
+
+
 /*========================== GENERAL STYLES =============================*/
 .container 
 {
@@ -118,4 +120,49 @@ a:hover
 .btn:hover
 {
     background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary
+{
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+img
+{
+    display: block;
+    width: 100%;
+    object-fit: cover; 
+}
+
+/*===================================MEDIA QUERIES (MEDIUM DEVICES/TABLETS)=============================*/
+
+@media screen and (max-width: 1024px)
+{
+    .container
+    {
+        width: var(--container-width-md);
+    }
+
+    section
+    {
+       margin-top: 6rem; 
+    }
+}
+
+/*===================================MEDIA QUERIES (SMALL DEVICES/PHONES)=============================*/
+
+@media screen and (max-width: 600)
+{
+    .container
+    {
+        width: var(--container-width-sm);
+    }
+
+    section > h2
+    {
+       margin-bottom: 2rem; 
+    }
 }
