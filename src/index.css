@@ -19,6 +19,7 @@
     --color-bg:          #1f1f38;                   /* Background color */
     --color-bg-var:      #2c2c6c;                   /* Background color (variant) */
     --color-primary:     #4db5ff;                   /* Primary color */
+    --color-white:       #fff;                      /* Color white */
     --color-primary-var: rgba(77, 181, 255, 0.4);   /* Primary color (variant) */
     --color-light:       rgba(255, 255, 255, 0.6);  /* Light color with transparency */
 
@@ -26,6 +27,8 @@
         --container-width-lg: 75%;  /* Large container width */
         --container-width-md: 86%;  /* Medium container width */
         --container-width-ms: 90%;  /* Small container width */
+    
+    --transition: all 400ms ease;   /* Standard transition length */
 }
 
 /* Configuring smooth scrolling behavior for HTML */
@@ -45,7 +48,74 @@ body
 {
     font-family: 'Poppins', sans-serif;                  /* Setting font-family */
     background: var(--color-bg);                         /* Background color */
-    color: var(--color-light);                           /* Text color */
+    color: var(--color-white);                           /* Text color */
     line-height: 1.7;                                    /* Line height */
     background-image: url(../src/assets/bg-texture.png); /* Background texture */
+}
+
+/*========================== GENERAL STYLES =============================*/
+.container 
+{
+    width: var(--container-width-lg);
+    margin: 0 auto; /*will position container in the middle of the page horizontally*/
+}
+
+h1,h2,h3,h4,h5
+{
+    font-weight: 500;
+}
+
+h1
+{
+    font-size: 2.5 rem;
+}
+
+section
+{
+    margin-top: 8rem;
+}
+
+section > h2, section > h5
+{
+    text-align: center;
+    color: var(--color-light);
+}
+
+section > h2
+{
+    color: car(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light /* class to change text color to light on certain elements*/
+{
+    color: var(--color-light);
+}
+
+a
+{
+    color: var(--color-primary);
+    transition: var(--transition);  
+}
+
+a:hover
+{
+    color: var(--color-white);
+}
+
+.btn
+{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transform: var(--transition);
+}
+
+.btn:hover
+{
+    background: var(--color-white);
 }
